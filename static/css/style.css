@@ -159,6 +159,7 @@ body{
 #contact{
   display: block;
   position: relative;
+  height: 600px;
   margin: auto;
 }
 

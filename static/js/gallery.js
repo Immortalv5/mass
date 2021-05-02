@@ -122,10 +122,10 @@ $('.gallery a').on('open.simplelightbox', function () {
   console.log($(this));
 });
 
-$(document).ready(function(){
-  console.log($('#header img').width())
-  $('#gallery').width($('#header img').width() - 300);
-  // $('#contact').width($('#header img').width() - 300);
-  $('#about').width($('#header img').width() - 300);
-  $('#contact').height($('#contact img').height());
-});
+// $(document).ready(function(){
+//   console.log($('#header img').width())
+//   $('#gallery').width($('#header img').width() - 300);
+//   // $('#contact').width($('#header img').width() - 300);
+//   $('#about').width($('#header img').width() - 300);
+//   $('#contact').height($('#contact img').height());
+// });
