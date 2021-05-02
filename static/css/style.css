@@ -64,46 +64,6 @@ body{
   z-index: 1;
 }
 
-@media (max-width: 800px){
-  .navbar ul{
-    position: relative;
-    top: 0;
-  }
-
-  .navbar ul{
-    position: absolute;
-    display: block;
-    top: 0;
-  }
-
-  .navbar li{
-    margin: auto;
-  }
-}
-
-@media(max-width : 1000px){
-  .poster .title{
-    display: none;
-  }
-}
-
-@media (min-width: 1200px){
-  #head{
-    max-width: 1400px !important;
-  }
-}
-
-@media (min-width: 1600px){
-
-  .poster .title{
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    transform: translate(-25%, -25%);
-    z-index: 1;
-  }
-}
-
 /* About */
 
 #about{
@@ -147,6 +107,7 @@ body{
 
 #gallery img{
   padding: 1rem;
+  max-width: 100%;
 }
 
 #gallery h3{
@@ -232,4 +193,77 @@ body{
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+@media(max-width: 660px){
+  #gallery{
+    height: 700px;
+  }
+}
+
+@media (max-width: 760px){
+  .navbar ul{
+    position: relative;
+    top: 0;
+  }
+
+  .navbar ul{
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+
+  .navbar li{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px 5px 15px;
+    font-size: 0.6vmax;
+    margin: auto;
+  }
+
+  .foot-contact h3{
+    font-size: 1.5vmax;
+  }
+
+  .foot-contact i{
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    font-size: 10px;
+    transition: all 0.8s ease;
+  }
+
+  .foot-contact i:hover{
+    font-size: 15px;
+  }
+
+}
+
+@media(max-width : 1000px){
+
+  #gallery{
+    height: 1200px;
+  }
+
+  .poster .title{
+    display: none;
+  }
+
+}
+
+@media (min-width: 1200px){
+  #head{
+    max-width: 1400px !important;
+  }
+}
+
+@media (min-width: 1600px){
+
+  .poster .title{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-25%, -25%);
+    z-index: 1;
+  }
 }
